@@ -11,4 +11,8 @@ const student = {
                 }
                 console.log('coding from html page');
 
+                const allClases = document.getElementsByClassName('places')
+                console.log(allClases);
+                
+
 
