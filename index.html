@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM project</title>
+        <link rel="stylesheet" href="styles/style.css">
+        <style>
+                h1{
+
+                        color: blue;
+                }
+                h3{
+                    color: red;
+                }
+        </style>
+</head>
+<body>
+        <header>
+                <h1>DOM project</h1>
+                <h1>DOM project for my js learning life</h1>
+
+        </header>
+        <main>
+                <h1>DOM project</h1>
+                <h3>My awesome Dom by arina</h3>
+                <li>arina</li>
+                <li>tanim</li>
+                <li>parina</li>
+        </main>
+        <script src="js/script.js"></script>
+        <script>
+                const liCollection = document.getElementsByTagName('li')
+                console.log(liCollection);
+                // we can loop li like array loop
+
+                for (const li of liCollection) {
+                        console.log(li.innerText);
+                        
+                }
+                const h1Collection = document.getElementsByTagName('h1')
+                console.log(h1Collection);
+                // for of loop is not working for h1Collection
+                for (const h1 of h1Collection) {
+                        console.log(h1.innerHTML);
+                        
+                }
+
+                
+        </script>
+</body>
+</html>
