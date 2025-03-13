@@ -29,7 +29,7 @@
                 <li>tanim</li>
                 <li>parina</li>
                 </section>
-                <section>
+                <section class=" places-continer">
                         <h1>important plasec</h1>
                         <ul>
                                 <li>sundorbon</li>
@@ -69,6 +69,18 @@
                         console.log(h1.innerHTML);
                         
                 }
+                // by queary selector
+
+                const someli = document.querySelectorAll('.places-continer li')
+                console.log(someli);
+                // for of loop
+                for (const li of someli) {
+                        console.log(li.innerText = 'arinatanim');
+                        console.log(li.innerText);
+                }
+               const liCollections = document.querySelector('.places-continer')
+               console.log(liCollections);
+
 
                 
         </script>

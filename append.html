@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Append Example</title>
+</head>
+<body>
+      <main class="main-continer">
+        <section id="first-continer">
+                <h1>Append Example</h1>
+                <ul id="fruits-list">
+                        <li>apple </li>
+                        <li>orange </li>
+                        <li>banana</li>
+                </ul>
+        </section>
+      </main> 
+      <script>
+        // one
+        const fruitsList = document.getElementById('fruits-list');
+        const newFruit = document.createElement('li');
+        newFruit.textContent = 'grape';
+        fruitsList.appendChild(newFruit);
+        
+// two
+       const fruitsList2 = document.getElementById('fruits-list');
+        const newFruit2 = document.createElement('li');
+        newFruit2.textContent = 'kiwi';
+        fruitsList.appendChild(newFruit2);
+
+        // three
+        const mainContiner = document.getElementById('main-continer')
+        console.log(mainContiner);
+        
+        
+      </script> 
+</body>
+</html>

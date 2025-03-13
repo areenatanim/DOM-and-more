@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>some styles By js</title>
+</head>
+<body>
+       <header>
+        <h1>styles By js</h1>
+       </header> 
+       <main>
+        <section class="fruits-continer">
+                <h1>fruits list</h1>
+                <ul>
+                        <li>banana</li>
+                        <li>mango</li>
+                        <li>lichi</li>
+                </ul>
+        </section>
+        <section id="books-continer">
+                <h1>books list</h1>
+                <ul>
+                        <li>bangla</li>
+                        <li>english</li>
+                        <li>math</li>
+                </ul>
+        </section>
+       </main>
+       <script>
+        const booksStyle = document.getElementById('books-continer').style.color ='blue' ;
+        const booksStyles = document.getElementById('books-continer').style.backgroundColor = 'lightblue';
+        const booksStyleFont = document.getElementById('books-continer').style.fontSize = '30px';
+        const booksStyleHight = document.getElementById('books-continer').style.height = '400px';
+        const booksStyleWidth = document.getElementById('books-continer').style.width = '400px';
+        const booksStyleBorder = document.getElementById('books-continer').style.borderRadius = '20px';
+        const booksStyleAling = document.getElementById('books-continer').style.alignContent ='center';
+        const booksStyleJustify = document.getElementById('books-continer').style.justifyContent ='center';
+        const book = document.getElementById('books-continer');
+        book.setAttribute('title','tooltip sit by js "arina" ');
+
+       </script>
+</body>
+</html>
